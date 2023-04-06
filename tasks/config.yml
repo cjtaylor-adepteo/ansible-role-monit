@@ -5,6 +5,9 @@
 - include_vars: redhat.yml
   when: ansible_os_family == "RedHat"
 
+- include_vars: alpine.yml
+  when: ansible_os_family == "Alpine"
+
 - name: create includes folder
   file: path={{ monit_includes }} state=directory mode=0600
 

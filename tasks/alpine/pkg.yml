@@ -1,0 +1,5 @@
+---
+- name: pkg - Install package
+  apk:
+    name: monit
+    state: present
